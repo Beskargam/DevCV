@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réseau Sociaux{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 title-home">
+
+                    <div id="upper_left-corner"></div>
+                    <div id="upper_right-corner"></div>
+                    <div id="lower_left-corner"></div>
+                    <div id="lower_right-corner"></div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-8 col-md-9 col-lg-10 title-home-text">
+                            Réseau Sociaux /
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-3 col-lg-2 text-center">
+                            <a class="return-next-link" href="{{ path('app_index') }}">
+                                Retour à l'index
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 flipboard-boxes">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="card">
+
+                                <div id="upper_left-news"></div>
+                                <div id="upper_right-news"></div>
+                                <div id="lower_left-news"></div>
+                                <div id="lower_right-news"></div>
+
+                                <img class="card-img-top"
+                                     src="{{ asset('images/transmission.jpg') }}"
+                                     alt="Card image cap">
+
+                                <div class="card-body">
+
+                                    <h4 class="card-subtitle">TYPE / <span class="type-group">information /</span></h4>
+                                    <h3 class="card-title">
+                                        Sous Couverture
+                                    </h3>
+                                    <p class="card-text">
+                                        Je suis un Ninja de l'Espace, l'identité d'un Ninja doit rester secrète. <br>
+                                        C'est pour ça qu'on se cache, qu'on est rapide et efficace.
+                                    </p>
+                                    <p>
+                                        Mais il faut savoir se découvrir entre Ninja. C'est pourquoi je partage avec vous ma véritable identité. <br>
+                                        Vous pourrez me trouver sur LinkedIn et sur Twitter.
+                                    </p>
+                                    <div class="col-lg-12 table-text">
+
+                                        <div id="upper_left-corner"></div>
+                                        <div id="upper_right-corner"></div>
+                                        <div id="lower_left-corner"></div>
+                                        <div id="lower_right-corner"></div>
+
+
+                                        <img src="{{ asset('images/title-icon2.png') }}"><span class="social-title">LinkedIn</span><br>
+                                        Profil : <a class="social-link" href="https://www.linkedin.com/in/aurelien-coral-auredev/">LinkedIn</a>
+                                        <div class="photo-center">
+                                            <img src="{{ asset('images/linkedin.png') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 table-text">
+
+                                        <div id="upper_left-corner"></div>
+                                        <div id="upper_right-corner"></div>
+                                        <div id="lower_left-corner"></div>
+                                        <div id="lower_right-corner"></div>
+
+
+                                        <img src="{{ asset('images/title-icon2.png') }}"><span class="social-title">Twitter</span><br>
+                                        Profil : <a class="social-link" href="https://twitter.com/dev_aure">Twitter</a>
+                                        <div class="photo-center">
+                                            <img src="{{ asset('images/twitter.jpg') }}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <a class="return-next-link" href="{{ path('app_personal') }}">
+                                        Page Précédente
+                                    </a>
+                                    <a class="return-next-link " href="{{ path('app_bonus') }}">
+                                        Page Suivante
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

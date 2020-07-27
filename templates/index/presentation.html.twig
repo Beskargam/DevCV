@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Présentation{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 title-home">
+
+                    <div id="upper_left-corner"></div>
+                    <div id="upper_right-corner"></div>
+                    <div id="lower_left-corner"></div>
+                    <div id="lower_right-corner"></div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-8 col-md-9 col-lg-10 title-home-text">
+                            Présentation /
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-3 col-lg-2 text-center">
+                            <a class="return-next-link" href="{{ path('app_index') }}">
+                                Retour à l'index
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 flipboard-boxes">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="card">
+
+                                <div id="upper_left-news"></div>
+                                <div id="upper_right-news"></div>
+                                <div id="lower_left-news"></div>
+                                <div id="lower_right-news"></div>
+
+                                <img class="card-img-top"
+                                     src="{{ asset('images/space_cockpit.jpg') }}"
+                                     alt="Card image cap">
+
+                                <div class="card-body">
+
+                                    <h4 class="card-subtitle">TYPE / <span class="type-group">information /</span></h4>
+                                    <h3 class="card-title">
+                                        Un Ninja de l'Espace
+                                    </h3>
+                                    <p class="card-text">
+                                        Je me nomme Aurélien, <br>
+                                        j'ai 27 ans, je suis né dans le système SOL, sur Terre, en Suisse et je suis
+                                        aujourd'hui un Ninja de l'Espace
+                                    </p>
+                                    <div class="photo-center">
+                                        <img src="{{ asset('images/ninja_face.JPG') }}">
+                                    </div>
+                                    <p>
+                                        Je sais parler trois langues, le Français en langue natale, l'allemand en langue
+                                        bilingue
+                                        et l'anglais en langue professionnelle.
+                                    </p>
+                                    <div class="col-lg-12 table-text">
+
+                                        <div id="upper_left-corner"></div>
+                                        <div id="upper_right-corner"></div>
+                                        <div id="lower_left-corner"></div>
+                                        <div id="lower_right-corner"></div>
+
+                                        Durant ma formation de Ninja, j'ai appris à utiliser les logiciels suivants afin
+                                        d'atteindre la perfection : <br>
+                                        <ul>
+                                            <li>PhpStorm</li>
+                                            <li>Sublime Text</li>
+                                            <li>GIT</li>
+                                            <li>GITHUB</li>
+                                            <li>Postman</li>
+                                            <li>PHPUnit</li>
+                                            <li>BlackFire</li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        L'informatique est ma principale passion. Tant au niveau logiciel que
+                                        matériel.<br>
+                                        Au niveau développement web, Symfony est mon langage de prédilection.
+                                        J'affectionne
+                                        tout particulièrement la sécurité de Symfony étant donné mon attrait pour la
+                                        cybersécurité.<br>
+                                        Les jeux vidéos sont en grande parties responsables de cette passion.
+                                    </p>
+                                    <p>
+                                        En dehors de l'informatique, je m'intéresse à l'Astronomie et à la Minéralogie.
+                                    </p>
+                                    <p>
+                                        Lors de mes temps libres, je fais du modding PC lorsque j'en ai l'occasion, je
+                                        confectionne des
+                                        bijoux artisanaux, je joue aux jeux de rôle papier ainsi qu'à Star Citizen et je
+                                        lis tout ce
+                                        qui peut concerner STAR WARS.
+                                    </p>
+                                    <p>
+                                        Je suis venu vivre en France pour vivre avec ma Femme.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <a class="return-next-link" href="{{ path('app_index') }}">
+                                        Page Précédente
+                                    </a>
+                                    <a class="return-next-link " href="{{ path('app_skill') }}">
+                                        Page Suivante
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

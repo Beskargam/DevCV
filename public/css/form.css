@@ -1,0 +1,40 @@
+.flipboard-login {
+    text-align: center;
+    margin: 2rem;
+}
+
+.login-form {
+    border: 5px #3aa6a8 solid;
+    padding: 2rem;
+}
+
+.field-space {
+    margin: 1rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #173c3f;
+    background-color: #040a13;
+    background-clip: padding-box;
+    border: 1px solid #040a13;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    color: #36c6d6;
+    background-color: #040a13;
+    border-color: #36c6d6;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

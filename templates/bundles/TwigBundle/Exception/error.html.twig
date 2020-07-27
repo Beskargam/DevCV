@@ -1,0 +1,11 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Unknown Error</h1>
+
+    <p>
+        The page expected an error.
+        Please <a href="{{ path('app_index') }}">return to the homepage</a> and try again.
+    </p>
+{% endblock %}

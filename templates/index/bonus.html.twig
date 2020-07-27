@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bonus{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 title-home">
+
+                    <div id="upper_left-corner"></div>
+                    <div id="upper_right-corner"></div>
+                    <div id="lower_left-corner"></div>
+                    <div id="lower_right-corner"></div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-8 col-md-9 col-lg-10 title-home-text">
+                            Bonus /
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-3 col-lg-2 text-center">
+                            <a class="return-next-link" href="{{ path('app_index') }}">
+                                Retour à l'index
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 flipboard-boxes">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="card">
+
+                                <div id="upper_left-news"></div>
+                                <div id="upper_right-news"></div>
+                                <div id="lower_left-news"></div>
+                                <div id="lower_right-news"></div>
+
+                                <img class="card-img-top"
+                                     src="{{ asset('images/meditation.jpg') }}"
+                                     alt="Card image cap">
+
+                                <div class="card-body">
+
+                                    <h4 class="card-subtitle">TYPE / <span class="type-group">information /</span></h4>
+                                    <h3 class="card-title">
+                                        Le Repos du Guerrier
+                                    </h3>
+                                    <p class="card-text">
+                                        Vous êtes arrivez à la dernière page. <br>
+                                        Détendez-vous, respirez profondément, et visionnez la vidéo ci-dessous.
+                                    </p>
+                                    <div class="col-lg-12 table-text">
+
+                                        <div id="upper_left-corner"></div>
+                                        <div id="upper_right-corner"></div>
+                                        <div id="lower_left-corner"></div>
+                                        <div id="lower_right-corner"></div>
+
+
+                                        <div class="photo-center">
+                                            <div class="video-container">
+                                                <iframe width="560" height="315"
+                                                        src="https://www.youtube.com/embed/-cFNhu77kUI"
+                                                        frameborder="0"
+                                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <a class="return-next-link" href="{{ path('app_social') }}">
+                                        Page Précédente
+                                    </a>
+                                    <a class="return-next-link" href="{{ path('app_index') }}">
+                                        Retour à l'index
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

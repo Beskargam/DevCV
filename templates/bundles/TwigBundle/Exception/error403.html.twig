@@ -1,0 +1,11 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Page forbidden</h1>
+
+    <p>
+        The requested page is forbidden.
+        Maybe you should sign in with your account or <a href="{{ path('app_index') }}">return to the homepage</a>.
+    </p>
+{% endblock %}
